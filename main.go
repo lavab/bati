@@ -13,7 +13,6 @@ var (
 	logFormatterType = flag.String("log_formatter_type", "text", "Log formatter to use") // Logrus log formatter
 	logForceColors   = flag.Bool("log_force_colors", false, "Force colored log output?") // Logrus force colors
 	etcdAddress      = flag.String("etcd_addresses", "", "Addresses of the etcd servers to use")
-	etcdPath         = flag.String("etcd_path", "", "Prefix of the etcd directory, no slash near the end")
 
 	services = flag.String("services", "", "Services list. Syntax: name,address,tag=val,tag=val;name,address")
 	stores   = flag.String("stores", "", "Stores list. Syntax: kind,path;kind,path")
